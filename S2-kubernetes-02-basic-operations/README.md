@@ -367,6 +367,7 @@ spec:
 
 ```bash
 kubectl apply -f clarus-deploy.yaml
+ kubectl expose deploy clarus-deploy --port 80 --type=NodePort
 ```
 
 - List the `Deployment`, `ReplicaSet` and `Pods` of `clarus-deploy` deployment using a label and note the name of ReplicaSet.
